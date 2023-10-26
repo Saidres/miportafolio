@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Logo from '../assets/Logo.png';
+import Logo from "../assets/logo.png";
 import { buttonStyle } from '../data/data';
 
 const Toggle: React.FC = () => {
