@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa6';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaFilePdf } from 'react-icons/fa6';
 import image2 from "../assets/image2.png";
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Banner = () => {
   const [currentImage, setCurrentImage] = useState(image);
