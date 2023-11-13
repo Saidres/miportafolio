@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import { BiHomeAlt, BiUser } from 'react-icons/bi';
-import { BsClipboardData, BsBriefcase, BsChatSquare } from 'react-icons/bs';
+import { BiSolidHand} from 'react-icons/bi';
+import { BsFillPersonFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import { FaBriefcase, FaIdCard} from 'react-icons/fa';
+import { AiFillHome } from 'react-icons/ai';
 
 const Nav = () => {
   const [activeIcon, setActiveIcon] = useState<string | null>(null);
@@ -25,7 +27,7 @@ const Nav = () => {
             className={`cursor-pointer w-[90px] h-[90px] flex items-center justify-center ${activeIcon === 'home' ? 'text-app-green' : ''}`}
             onClick={() => handleIconClick('home')}
           >
-            <BiHomeAlt size={20}/>
+            <AiFillHome size={30}/>
           </Link>
           <Link 
             to='about'
@@ -35,7 +37,7 @@ const Nav = () => {
             className={`cursor-pointer w-[90px] h-[90px] flex items-center justify-center ${activeIcon === 'about' ? 'text-app-green' : ''}`}
             onClick={() => handleIconClick('about')}
           >
-            <BiUser size={20} />
+            <BsFillPersonFill size={30} />
           </Link>
           <Link 
             to='services'
@@ -45,7 +47,7 @@ const Nav = () => {
             className={`cursor-pointer w-[90px] h-[90px] flex items-center justify-center ${activeIcon === 'services' ? 'text-app-green' : ''}`}
             onClick={() => handleIconClick('services')}
           >
-            <BsClipboardData size={20}/>
+            <BiSolidHand size={30}/>
           </Link>
           <Link 
             to='work'
@@ -55,7 +57,7 @@ const Nav = () => {
             className={`cursor-pointer w-[90px] h-[90px] flex items-center justify-center ${activeIcon === 'work' ? 'text-app-green' : ''}`}
             onClick={() => handleIconClick('work')}
           >
-            <BsBriefcase size={20}/>
+            <FaBriefcase size={30}/>
           </Link>
           <Link 
             to='contact'
@@ -65,7 +67,7 @@ const Nav = () => {
             className={`cursor-pointer w-[90px] h-[90px] flex items-center justify-center ${activeIcon === 'contact' ? 'text-app-green' : ''}`}
             onClick={() => handleIconClick('contact')}
           >
-            <BsChatSquare size={20} />
+            <FaIdCard size={30} />
           </Link>
         </div>
       </div>

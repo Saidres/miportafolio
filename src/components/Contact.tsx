@@ -1,8 +1,112 @@
+import { FaWhatsapp } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { buttonStyle } from '../data/data';
 
 const Contact = () => {
-  return <div  className="section" id='contact'>
-    Contact
-    </div>;
+  return (
+    <div className="grid grid-cols-2 py-32" id="contact">
+      <div className="flex flex-col items-center font-rajdhani gap-3">
+        {/* Sección de WhatsApp */}
+        <h1 className="text-white font-bold text-7xl">Háblame</h1>
+        <div className="bg-app-second p-8 flex-col flex items-center rounded-2xl w-72">
+          <FaWhatsapp
+            size="3x"
+            className="text-app-green"
+            style={{ width: '40px', height: '40px' }}
+          />
+          <div className="text-white text-xl font-bold">WhatsApp</div>
+          <div className="text-white font-medium ">+57 3158528714</div>
+          <a
+            href="https://wa.me/573158528714"  // Reemplaza esto con el enlace de tu chat de WhatsApp
+            target="_blank"  // Abre el enlace en una nueva pestaña/ventana
+            rel="noopener noreferrer"
+            className="text-app-green text-3xl font-bold hover:underline cursor-pointer"
+          >
+            Escríbeme
+          </a>        
+        </div>
+
+        {/* Sección de Correo Electrónico */}
+        <div className="bg-app-second p-8 flex-col flex items-center rounded-2xl w-72">
+          <HiOutlineMail
+            size="3x"
+            className="text-app-green"
+            style={{ width: '40px', height: '40px' }}
+          />
+          <div className="text-white text-xl font-bold">Correo Electrónico</div>
+          <div className="text-white font-medium ">
+            santiago.chamorro@outlook.com
+          </div>
+          <a
+            href="mailto:santiago.chamorro@outlook.com"
+            className="text-app-green text-3xl font-bold hover:underline cursor-pointer"
+          >
+            Escríbeme
+          </a>        
+        </div>
+      </div>
+
+      {/* Sección del Formulario */}
+      <div className="p-6 flex flex-col justify-start items-center h-screen">
+        <form
+          action="https://formsubmit.co/santiago.chamorro@outlook.com"
+          method="POST"
+          className="flex-col flex w-90 font-rajdhani mb-6"
+        >
+          <div className="text-white text-7xl font-bold">Contactame</div>
+          <p className="font-medium text-xl text-white mb-3">
+            Escribeme sobre tu proyecto
+          </p>
+          <div className="mb-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Nombre"
+              className="bg-app-second rounded p-2 w-full text-white"
+            />
+          </div>
+          <div className="mb-4">
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo Electrónico"
+              className="bg-app-second rounded-lg p-2 w-full text-white"
+            />
+          </div>
+          <div className="mb-4">
+            <input
+              type="text"
+              name="subject"
+              placeholder="Asunto"
+              className="bg-app-second rounded-lg p-2 w-full text-white"
+            />
+          </div>
+          <div className="mb-4">
+            <textarea
+              name="message"
+              placeholder="Mensaje"
+              className="bg-app-second rounded-lg p-2 w-full text-white"
+            />
+          </div>
+          <button
+            type="submit"
+            value="Enviar "
+            className="font-bold"
+            style={{ ...buttonStyle, width: '200px',padding: '5px 10px' }}
+          >
+            Enviar Mensaje
+          </button>
+
+          <input
+            type="hidden"
+            name="_next"
+            value="http://localhost:5173/"
+          ></input>
+          <input type="hidden" name="_captcha" value="false"></input>
+        </form>
+      </div>
+    </div>
+  );
 };
 
 export default Contact;

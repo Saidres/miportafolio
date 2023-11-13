@@ -1,0 +1,27 @@
+/* Services.css */
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 5)); 
+    }
+  }
+  
+  .animate-scroll {
+    display: flex;
+    width: calc(250px * 10); 
+    margin: 0 auto;
+    overflow: hidden;
+    animation: scroll 8s linear infinite; 
+  }
+  
+  
+  .icon-div {
+    margin: 0 100px;
+  }
+
+.icon-margin {
+    margin: 30px; 
+  }
+  

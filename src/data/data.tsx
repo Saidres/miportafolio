@@ -1,9 +1,9 @@
 const buttonStyle = {
-  border: '3px solid #CBFF4D',
+  border: '5px solid #CBFF4D',
   backgroundColor: 'transparent',
   color: '#CBFF4D',
   padding: '7px 20px',
-  borderRadius: '20px',
+  borderRadius: '30px',
   cursor: 'pointer',
   fontSize: '1.2rem'
 };

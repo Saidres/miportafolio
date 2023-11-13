@@ -2,7 +2,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import image1 from "../assets/image.png";
-import image2 from "../assets/image.png";
+import image2 from "../assets/yo1.png";
 
 const About = () => {
   return (
@@ -14,6 +14,7 @@ const About = () => {
           infiniteLoop 
           showStatus={false} 
           showThumbs={false}
+
           renderArrowPrev={(onClickHandler, hasPrev, label) => 
             hasPrev && (
               <button type="button" onClick={onClickHandler} title={label} style={{position: 'absolute', top: '50%', left: 60, transform: 'translateY(-50%)'}}>
@@ -29,13 +30,14 @@ const About = () => {
             )
           }
         >
-          <div>
-            <img src={image1} alt="Imagen 1" />
-          </div>
-          <div>
-            <img src={image2} alt="Imagen 2" />
-          </div>
-          {/* Agrega más imágenes según sea necesario */}
+            <div>
+              <img src={image1} alt="Imagen 1" />
+            </div>
+            <div className='mx-28 my-28'>
+              <img src={image2} alt="Imagen 2 " />
+            </div>
+            {/* Agrega más imágenes según sea necesario */}
+          
         </Carousel>
       </div>
 
@@ -47,7 +49,7 @@ const About = () => {
           </h1>
         </div>
         <div className="mb-4">
-          <p className="text-xl text-white font-light">
+          <p className="text-2xl text-white font-light">
             Soy un estudiante de{' '}
             <span className="text-app-green">Ingeniería de Software</span> apasionado por crear soluciones innovadoras, con habilidades destacadas para trabajar en equipo y una visión actualizada en el mundo del software. Mis hobbies que más destaco son los deportes, como hacer bicicleta, patinar, entre otros deportes.
           </p>

@@ -23,6 +23,7 @@ export default {
       colors: {
         'app-primary': '#4705D2',
         'app-green': '#CBFF4D',
+        'app-second': '#8E72F2'
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
