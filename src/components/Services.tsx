@@ -1,6 +1,6 @@
 import { FaReact, FaHtml5, FaCss3, FaJs, FaPython, FaDatabase, FaPhp, FaLaravel } from 'react-icons/fa';
 import { BiLogoTailwindCss, BiLogoJava, BiLogoAngular, BiLogoBootstrap, BiLogoTypescript} from 'react-icons/bi';
-import './Services.css';
+import './services.css';
 
 const Services = () => {
   const iconSize = { fontSize: '13em', color: '#CBFF4D'};
