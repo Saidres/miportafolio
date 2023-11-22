@@ -28,20 +28,20 @@ const Banner = () => {
   };
 
   return (
-    <div className="section grid grid-cols-1 lg:grid-cols-2" id="home">
+    <div className="section grid grid-cols-1 lg:grid-cols-2 pt-20 lg:pt-0" id="home">
       {/* Contenido de la izquierda */}
-      <div className="flex flex-col justify-center p-9 ml-60">
-        <div className="mb-2">
+      <div className="flex flex-col justify-center items-center lg:items-start p-9 ml-6 lg:ml-60">        
+        <div className="mb-2 text-center lg:text-left">
           <h1 className="text-7xl font-bold font-rajdhani text-white">
           {t('banner.greeting')}<br />
           {t('banner.name')}<br />
             <span className="text-app-green">{t('banner.surname')}</span>  
           </h1>
         </div>
-        <div className="mb-4">
+        <div className="mb-4 text-center lg:text-left">
           <p className="text-2xl text-white font-light">{t('banner.description')} </p>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center justify-center lg:justify-start">
           <div className="relative group">
             <button
               className="text-app-green py-2 m-6 transition duration-300 transform hover:scale-110"

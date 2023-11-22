@@ -42,10 +42,10 @@ const Header = () => {
   return (
     <header className="py-2 fixed w-full">
       <div className="container mx-auto flex justify-between items-center">
-        <a href="#" className='ml-40'>
+        <a href="#" className=''>
           <img src={Logo} alt="Logo" />
         </a>
-        <div className="flex items-center space-x-5 mx-24"> 
+        <div className="flex items-center space-x-5"> 
           <Toggle />
           <button className="font-rajdhani font-bold" style={buttonStyle} onClick={scrollToContact}>
             {t('header.contactMe')}
