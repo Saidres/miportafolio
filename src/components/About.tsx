@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
   const { t } = useTranslation();
   return (
-    <div className="section grid grid-cols-1 lg:grid-cols-2" id="about">
+    <div className="section grid grid-cols-1 lg:grid-cols-2 " id="about">
       {/* Contenido de la izquierda (slider de imágenes) */}
       <div className="lg:block relative">
       <div className="mb-2 text-center lg:hidden">
