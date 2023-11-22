@@ -2,11 +2,15 @@ import { BsWordpress, BsFiletypeHtml, BsGithub,BsFillBootstrapFill } from 'react
 import { FaFigma, FaPhp} from 'react-icons/fa6';
 import { useState } from 'react';
 import { BiLogoDjango, BiLogoAngular, BiLogoPostgresql } from 'react-icons/bi';
+import { useTranslation } from 'react-i18next';
+
 
 type ProjectName = "redinfoco" | "academix" | "KeySafe"; // Define los nombres de los proyectos
 
 
 const Projects = () => {
+
+  const { t } = useTranslation();
   const [hoveredProject, setHoveredProject] = useState<ProjectName | null>(null);
 
   const handleMouseEnter = (projectName: ProjectName) => {
@@ -39,7 +43,7 @@ const Projects = () => {
       <div className="flex flex-col justify-center items-center" id='work'>
         <div className="mb-2">
           <h1 className="text-7xl font-bold font-rajdhani text-white">
-            Proyectos
+            {t('projects.title')}
           </h1>
         </div>
       </div>
@@ -54,7 +58,7 @@ const Projects = () => {
         >
           <div className="px-20 py-10 font-rajdhani text-white">
             <h2 className="font-bold text-5xl mb-4">RED INFOCO</h2>
-            <p className="font-medium mb-6 text-xl">Sitio web para una empresa colombiana de Educación.</p>
+            <p className="font-medium mb-6 text-xl">{t('projects.redinfocoDescription')}</p>
             <div className="flex">
               <i className="fas fa-icono1">
                 <BsWordpress style={{ width: '30px', height: '30px', color:"#CBFF4D" }} />
@@ -68,7 +72,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex flex-col items-end py-9 px-20">
-            <img src="src/assets/computador1.png" alt="Computadora" />
+            <img src="src/assets/computador.png" alt="Computadora" />
           </div>
         </div>
 
@@ -82,7 +86,7 @@ const Projects = () => {
         >
           <div className="px-20 py-10 font-rajdhani text-white">
             <h2 className="font-bold text-5xl mb-4">ACADEMIX</h2>
-            <p className="font-medium mb-6 text-xl">Una aplicación web para llevar la gestión de una institución educativa.</p>
+            <p className="font-medium mb-6 text-xl">{t('projects.academixDescription')}</p>
             <div className="flex">
               <i className="fas fa-icono1">
                 <FaPhp style={{ width: '30px', height: '30px', color:"#CBFF4D" }} />
@@ -96,7 +100,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex flex-col items-end py-9 px-20">
-            <img src="src/assets/computador2.png" alt="Computadora" />
+            <img src="src/assets/computadora.png" alt="Computadora" />
           </div>
         </div>
 
@@ -110,7 +114,7 @@ const Projects = () => {
         >
           <div className="px-20 py-10 font-rajdhani text-white">
             <h2 className="font-bold text-5xl mb-4">KeySafe</h2>
-            <p className="font-medium mb-6 text-xl">Aplicacion web de gestion de contraseñas usando django y angular.</p>
+            <p className="font-medium mb-6 text-xl">{t('projects.keySafeDescription')}</p>
             <div className="flex">
               <i className="fas fa-icono1">
                 <BiLogoDjango style={{ width: '30px', height: '30px', color:"#CBFF4D" }} />
@@ -124,7 +128,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex flex-col items-end py-9 px-20">
-            <img src="src/assets/computador3.png" alt="Computadora" />
+            <img src="src/assets/computador-3.png" alt="Computadora" />
           </div>
         </div>
       </div>

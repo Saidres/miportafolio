@@ -6,10 +6,14 @@ import image2 from "../assets/image2.png";
 import { useState } from 'react';
 import { buttonStyle } from "../data/data";
 import cvPdf from "../assets/cv.pdf";
+import { useTranslation } from 'react-i18next';
+
 
 const Banner = () => {
   const [currentImage, setCurrentImage] = useState(image);
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null);
+  const {  t } = useTranslation();
+
 
   const openGitHub = () => {
     window.open('https://github.com/Saidres', '_blank');
@@ -29,13 +33,13 @@ const Banner = () => {
       <div className="flex flex-col justify-center p-9 ml-60">
         <div className="mb-2">
           <h1 className="text-7xl font-bold font-rajdhani text-white">
-            ¡HOLA!<br />
-            SOY<br />
-            <span className="text-app-green">SANTIAGO</span>  
+          {t('banner.greeting')}<br />
+          {t('banner.name')}<br />
+            <span className="text-app-green">{t('banner.surname')}</span>  
           </h1>
         </div>
         <div className="mb-4">
-          <p className="text-2xl text-white font-light">Soy un estudiante de ingeniería de Software <br />apasionado en programar, mi enfoque se centra en el FrontEnd </p>
+          <p className="text-2xl text-white font-light">{t('banner.description')} </p>
         </div>
         <div className="flex items-center">
           <div className="relative group">

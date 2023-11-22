@@ -1,0 +1,52 @@
+{
+    "header": {
+      "contactMe": "Contáctame"
+    },
+
+    "banner": {
+        "greeting": "¡HOLA!",
+        "name": "SOY",
+        "surname": "SANTIAGO",
+        "description": "Soy un estudiante de ingeniería de software apasionado por la programación, con enfoque en FrontEnd."
+    },
+
+    "about": {
+        "title": "Sobre Mí",
+        "description": "Soy un estudiante de Ingeniería de Software apasionado por crear soluciones innovadoras, con habilidades destacadas para trabajar en equipo y una visión actualizada en el mundo del software. Mis hobbies que más destaco son los deportes, como hacer bicicleta, patinar, ping pong, voleibol y entre otros deportes."
+    },
+
+    "services": {
+        "title": "Habilidades"
+    },
+
+    "projects": {
+        "title": "Proyectos",
+        "redinfocoTitle": "RED INFOCO",
+        "redinfocoDescription": "Sitio web para una empresa colombiana de Educación.",
+        "academixTitle": "ACADEMIX",
+        "academixDescription": "Una aplicación web para llevar la gestión de una institución educativa.",
+        "keySafeTitle": "KeySafe",
+        "keySafeDescription": "Aplicación web de gestión de contraseñas usando Django y Angular."
+    },
+
+    "contact": {
+        "title": "Contáctame",
+        "whatsapp": "WhatsApp",
+        "whatsappNumber": "+57 3158528714",
+        "email": "Correo Electrónico",
+        "emailAddress": "santiago.chamorro@outlook.com",
+        "contactMe": "Contáctame",
+        "writeToMe": "Escríbeme sobre tu proyecto",
+        "namePlaceholder": "Nombre",
+        "emailPlaceholder": "Correo Electrónico",
+        "subjectPlaceholder": "Asunto",
+        "messagePlaceholder": "Mensaje",
+        "sendMessage": "Enviar Mensaje",
+        "escribeme": "Escríbeme"
+      }
+
+    
+
+
+}
+  

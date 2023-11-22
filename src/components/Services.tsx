@@ -1,16 +1,20 @@
 import { FaReact, FaHtml5, FaCss3, FaJs, FaPython, FaDatabase, FaPhp, FaLaravel } from 'react-icons/fa';
 import { BiLogoTailwindCss, BiLogoJava, BiLogoAngular, BiLogoBootstrap, BiLogoTypescript} from 'react-icons/bi';
 import './services.css';
+import { useTranslation } from 'react-i18next';
+
 
 const Services = () => {
   const iconSize = { fontSize: '13em', color: '#CBFF4D'};
+  const { t } = useTranslation();
+
 
   return (
     <div className="py-10">
       <div className="flex flex-col justify-center items-center p-10" id='services'>
         <div className="py-10">
           <h1 className="text-7xl font-bold font-rajdhani text-white">
-            Habilidades
+            {t('services.title')}
           </h1>
         </div>
 

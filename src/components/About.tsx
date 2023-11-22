@@ -3,8 +3,10 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import image1 from "../assets/image.png";
 import image2 from "../assets/yo1.png";
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="section grid grid-cols-1 lg:grid-cols-2" id="about">
       {/* Contenido de la izquierda (slider de imágenes) */}
@@ -45,13 +47,12 @@ const About = () => {
       <div className="flex flex-col justify-center p-10">
         <div className="mb-2">
           <h1 className="text-7xl font-bold font-rajdhani text-white">
-            Sobre mí
+            {t('about.title')}
           </h1>
         </div>
         <div className="mb-4">
           <p className="text-2xl text-white font-light">
-            Soy un estudiante de{' '}
-            <span className="text-app-green">Ingeniería de Software</span> apasionado por crear soluciones innovadoras, con habilidades destacadas para trabajar en equipo y una visión actualizada en el mundo del software. Mis hobbies que más destaco son los deportes, como hacer bicicleta, patinar, entre otros deportes.
+            {t('about.description')}
           </p>
         </div>
       </div>

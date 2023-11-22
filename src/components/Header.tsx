@@ -1,13 +1,17 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Logo from "../assets/logo.png";
 import { buttonStyle } from '../data/data';
+import { useTranslation } from 'react-i18next';
 
-const Toggle: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+const Toggle: React.FC<{ onClick?: () => void }> = ({ onClick = () => {} }) => {
   const [isToggled, setIsToggled] = useState(false);
+  const { i18n } = useTranslation();
 
   const toggle = () => {
     setIsToggled(!isToggled);
     onClick();
+    // Cambia el idioma al hacer clic en el toggle
+    i18n.changeLanguage(isToggled ? 'es' : 'en');
   };
 
   return (
@@ -33,6 +37,8 @@ const Header = () => {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <header className="py-2 fixed w-full">
       <div className="container mx-auto flex justify-between items-center">
@@ -40,9 +46,9 @@ const Header = () => {
           <img src={Logo} alt="Logo" />
         </a>
         <div className="flex items-center space-x-5 mx-24"> 
-          <Toggle onClick={scrollToContact} />
+          <Toggle />
           <button className="font-rajdhani font-bold" style={buttonStyle} onClick={scrollToContact}>
-            Contáctame
+            {t('header.contactMe')}
           </button>
         </div>
       </div>
@@ -51,10 +57,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
-
-
-
-
