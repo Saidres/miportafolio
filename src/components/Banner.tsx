@@ -28,7 +28,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="section grid grid-cols-1 lg:grid-cols-2 pt-20 pb-32 lg:pt-0" id="home">
+    <div className="section grid grid-cols-1 lg:grid-cols-2 pt-40 pb-32 lg:pt-0" id="home">
       {/* Contenido de la izquierda */}
       <div className="flex flex-col justify-center items-center lg:items-start p-9 ml-6 lg:ml-60">        
         <div className="mb-2 text-center lg:text-left">
