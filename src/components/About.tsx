@@ -11,6 +11,11 @@ const About = () => {
     <div className="section grid grid-cols-1 lg:grid-cols-2" id="about">
       {/* Contenido de la izquierda (slider de imágenes) */}
       <div className="lg:block relative">
+      <div className="mb-2 text-center lg:hidden">
+          <h1 className="text-7xl font-bold font-rajdhani text-white">
+            {t('about.title')}
+          </h1>
+        </div>
         <Carousel 
           autoPlay 
           infiniteLoop 
@@ -44,13 +49,13 @@ const About = () => {
       </div>
 
       {/* Contenido de la derecha */}
-      <div className="flex flex-col justify-center p-10">
-        <div className="mb-2">
+      <div className="flex flex-col justify-center items-center lg:items-start p-10">
+        <div className="mb-2 text-center lg:text-left hidden lg:block">
           <h1 className="text-7xl font-bold font-rajdhani text-white">
             {t('about.title')}
           </h1>
         </div>
-        <div className="mb-4">
+        <div className="mb-4 text-center lg:text-left">
           <p className="text-2xl text-white font-light">
             {t('about.description')}
           </p>
@@ -61,4 +66,5 @@ const About = () => {
 };
 
 export default About;
+
 
