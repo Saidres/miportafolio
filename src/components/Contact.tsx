@@ -104,7 +104,7 @@ const Contact = () => {
           <input
             type="hidden"
             name="_next"
-            value="http://localhost:5173/"
+            value="https://santiago-portafolio-hazel.vercel.app/"
           ></input>
           <input type="hidden" name="_captcha" value="false"></input>
         </form>
