@@ -8,7 +8,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="grid grid-cols-2 py-32" id="contact">
+    <div className="grid grid-cols-1 py-32 lg:grid-cols-2" id="contact">
       <div className="flex flex-col items-center font-rajdhani gap-3">
         {/* Sección de WhatsApp */}
         <h1 className="text-white font-bold text-7xl">{t('contact.title')}</h1>
