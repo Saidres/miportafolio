@@ -47,10 +47,10 @@ const Projects = () => {
           </h1>
         </div>
       </div>
-      <div className='flex flex-col justify-normal px-40 '>
+      <div className='flex flex-col justify-normal px-4 sm:px-40 '>
         <div
           onClick={() => handleCardClick("redinfoco")}
-          className={`bg-app-second h-60 px-2 m-5 grid grid-cols-2 rounded-2xl transition-transform transform ${
+          className={`bg-app-second h-auto sm:h-60 px-2 m-2 sm:m-5 grid grid-cols-1 sm:grid-cols-2 rounded-2xl transition-transform transform ${
             hoveredProject === "redinfoco" ? "scale-110" : "scale-100"
           }`}
           onMouseEnter={() => handleMouseEnter("redinfoco")}
@@ -78,7 +78,7 @@ const Projects = () => {
 
         <div
           onClick={() => handleCardClick("academix")}
-          className={`bg-app-second h-60 px-2 m-5 grid grid-cols-2 rounded-2xl transition-transform transform ${
+          className={`bg-app-second h-auto sm:h-60 px-2 m-2 sm:m-5 grid grid-cols-1 sm:grid-cols-2 rounded-2xl transition-transform transform ${
             hoveredProject === "academix" ? "scale-110" : "scale-100"
           }`}
           onMouseEnter={() => handleMouseEnter("academix")}
@@ -106,7 +106,7 @@ const Projects = () => {
 
         <div
           onClick={() => handleCardClick("KeySafe")}
-          className={`bg-app-second h-60 px-2 m-5 grid grid-cols-2 rounded-2xl transition-transform transform ${
+          className={`bg-app-second h-auto sm:h-60 px-2 m-2 sm:m-5 grid grid-cols-1 sm:grid-cols-2 rounded-2xl transition-transform transform ${
             hoveredProject === "KeySafe" ? "scale-110" : "scale-100"
           }`}
           onMouseEnter={() => handleMouseEnter("KeySafe")}
