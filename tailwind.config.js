@@ -25,6 +25,13 @@ export default {
         'app-green': '#CBFF4D',
         'app-second': '#8E72F2'
       },
+
+      fontSize: {
+        '10xl': '10rem',
+        '11xl': '11rem',
+        '12xl': '12rem',
+      },
+
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
         about: "url('./assets/about.png')",

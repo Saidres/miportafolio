@@ -3,12 +3,8 @@ import { BiLogoTailwindCss, BiLogoJava, BiLogoAngular, BiLogoBootstrap, BiLogoTy
 import './services.css';
 import { useTranslation } from 'react-i18next';
 
-
 const Services = () => {
-  const iconSize = { fontSize: '13em', color: '#CBFF4D'};
   const { t } = useTranslation();
-
-
   return (
     <div className="py-10">
       <div className="flex flex-col justify-center items-center p-10" id='services'>
@@ -20,24 +16,24 @@ const Services = () => {
 
         {/* Sección de Iconos en Dos Filas */}
         <div className="flex flex-wrap justify-center animate-scroll items-center">
-          <FaJs style={{ ...iconSize, }} className="text-white icon-margin" />
-          <FaPython style={{ ...iconSize, }} className="text-white icon-margin" />
-          <BiLogoJava style={{ ...iconSize, }} className="text-white icon-margin" />
-          <FaHtml5 style={{ ...iconSize, }} className="text-white icon-margin" />
-          <FaCss3 style={{ ...iconSize, }} className="text-white icon-margin" />
-          <FaPhp style={{ ...iconSize, }} className="text-white icon-margin" />
-          <FaJs style={{ ...iconSize, }} className="text-white icon-margin" />
+          <FaJs className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <FaPython className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <BiLogoJava className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <FaHtml5 className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <FaCss3 className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <FaPhp className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <FaJs className="text-app-green icon-margin text-9xl lg:text-12xl" />
         
         </div>
 
         <div className="flex flex-wrap justify-center animate-scroll">
-          <FaReact style={{ ...iconSize, }} className="text-white icon-margin" />
-          <BiLogoAngular style={{ ...iconSize, }} className="text-white icon-margin" />
-          <BiLogoBootstrap style={{ ...iconSize, }} className="text-white icon-margin" />
-          <BiLogoTailwindCss style={{ ...iconSize, }} className="text-white icon-margin" />
-          <FaDatabase style={{ ...iconSize, }} className="text-white icon-margin" />
-          <FaLaravel style={{ ...iconSize, }} className="text-white icon-margin" />
-          <BiLogoTypescript style={{ ...iconSize, }} className="text-white icon-margin" />
+          <FaReact className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <BiLogoAngular className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <BiLogoBootstrap className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <BiLogoTailwindCss className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <FaDatabase className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <FaLaravel className="text-app-green icon-margin text-9xl lg:text-12xl" />
+          <BiLogoTypescript className="text-app-green icon-margin text-9xl lg:text-12xl" />
         </div>
       </div>
     </div>
@@ -45,4 +41,3 @@ const Services = () => {
 };
 
 export default Services;
-
