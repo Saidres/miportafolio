@@ -30,7 +30,8 @@
     },
 
     "contact": {
-        "title": "Contáctame",
+        "title": "Háblame",
+        "title1": "Contáctame",
         "whatsapp": "WhatsApp",
         "whatsappNumber": "+57 3158528714",
         "email": "Correo Electrónico",
