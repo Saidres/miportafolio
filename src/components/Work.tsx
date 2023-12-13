@@ -5,7 +5,7 @@ import { BiLogoDjango, BiLogoAngular, BiLogoPostgresql } from 'react-icons/bi';
 import { useTranslation } from 'react-i18next';
 
 
-type ProjectName = "redinfoco" | "academix" | "KeySafe"; // Define los nombres de los proyectos
+type ProjectName = "redinfoco" | "academix" | "KeySafe";
 
 
 const Projects = () => {
@@ -22,7 +22,7 @@ const Projects = () => {
   };
 
   const handleCardClick = (projectName: ProjectName) => {
-    // Puedes redirigir a diferentes enlaces según el proyecto
+
     switch (projectName) {
       case "redinfoco":
         window.open("https://redinfoco.com", "_blank");

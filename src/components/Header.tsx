@@ -10,7 +10,6 @@ const Toggle: React.FC<{ onClick?: () => void }> = ({ onClick = () => {} }) => {
   const toggle = () => {
     setIsToggled(!isToggled);
     onClick();
-    // Cambia el idioma al hacer clic en el toggle
     i18n.changeLanguage(isToggled ? 'es' : 'en');
   };
 
@@ -40,7 +39,7 @@ const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <header className="py-2 fixed w-full">
+    <header className="py-2 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
         <a href="#" className=''>
           <img src={Logo} alt="Logo" />
