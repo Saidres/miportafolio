@@ -1,8 +1,10 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import image1 from "../assets/image.png";
-import image2 from "../assets/yo1.png";
+import image1 from "../assets/yo1.png";
+import image3 from "../assets/yo3.jpg";
+import image4 from "../assets/yo4.jpg";
+
 import { useTranslation } from 'react-i18next';
 
 const About = () => {
@@ -22,13 +24,25 @@ const About = () => {
           showStatus={false} 
           showThumbs={false}
 
-          renderArrowPrev={(onClickHandler, hasPrev, label) => 
+          renderArrowPrev={(onClickHandler, hasPrev, label) =>
             hasPrev && (
-              <button type="button" onClick={onClickHandler} title={label} style={{position: 'absolute', top: '50%', left: 60, transform: 'translateY(-50%)'}}>
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: 50, // Ajusta la posición del botón de retroceso según sea necesario
+                  transform: 'translateY(-50%)',
+                  zIndex: 1,
+                }}
+              >
                 <IoIosArrowBack size={32} color="white" />
               </button>
             )
           }
+
           renderArrowNext={(onClickHandler, hasNext, label) => 
             hasNext && (
               <button type="button" onClick={onClickHandler} title={label} style={{position: 'absolute', top: '50%', right: 60, transform: 'translateY(-50%)'}}>
@@ -37,18 +51,20 @@ const About = () => {
             )
           }
         >
-            <div>
-              <img src={image1} alt="Imagen 1" />
+            <div className='mx-28 my-28'>
+              <img className='rounded-lg' src={image1} alt="Imagen 1 " />
             </div>
             <div className='mx-28 my-28'>
-              <img src={image2} alt="Imagen 2 " />
+              <img className='rounded-lg' src={image3} alt="Imagen 3 " />
             </div>
-            {/* Agrega más imágenes según sea necesario */}
+            <div className='mx-28 my-28'>
+              <img className='rounded-lg' src={image4} alt="Imagen 4 " />
+            </div>
+
           
         </Carousel>
       </div>
 
-      {/* Contenido de la derecha */}
       <div className="flex flex-col justify-center items-center lg:items-start p-10">
         <div className="mb-2 text-center lg:text-left hidden lg:block">
           <h1 className="text-7xl font-bold font-rajdhani text-white">
