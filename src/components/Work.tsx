@@ -3,6 +3,9 @@ import { FaFigma, FaPhp} from 'react-icons/fa6';
 import { useState } from 'react';
 import { BiLogoDjango, BiLogoAngular, BiLogoPostgresql } from 'react-icons/bi';
 import { useTranslation } from 'react-i18next';
+import image1 from "../assets/computador.png";
+import image2 from "../assets/computadora.png";
+import image3 from "../assets/computador-3.png";
 
 
 type ProjectName = "redinfoco" | "academix" | "KeySafe";
@@ -31,7 +34,7 @@ const Projects = () => {
         window.open("https://gitlab.com/Saidres/notas-ucc", "_blank");
         break;
       case "KeySafe":
-        window.open("https://KeySafe.com", "_blank");
+        window.open("https://github.com/Saidres/Front-KeySafe", "_blank");
         break;
       default:
         break;
@@ -72,7 +75,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex flex-col items-end py-9 px-20">
-            <img src="src/assets/computador.png" alt="Computadora" />
+            <img src={image1} alt="Computadora" />
           </div>
         </div>
 
@@ -100,7 +103,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex flex-col items-end py-9 px-20">
-            <img src="src/assets/computadora.png" alt="Computadora" />
+            <img src= {image2} alt="Computadora" />
           </div>
         </div>
 
@@ -128,7 +131,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex flex-col items-end py-9 px-20">
-            <img src="src/assets/computador-3.png" alt="Computadora" />
+            <img src={image3} alt="Computadora" />
           </div>
         </div>
       </div>
