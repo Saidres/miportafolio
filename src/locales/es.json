@@ -7,12 +7,12 @@
         "greeting": "¡HOLA!",
         "name": "SOY",
         "surname": "SANTIAGO",
-        "description": "Soy un estudiante de ingeniería de software apasionado por la programación, con enfoque en FrontEnd."
+        "description": "Ingeniero de Software Full Stack. Desarrolló soluciones escalables combinando backend, frontend y arquitectura de microservicios."
     },
 
     "about": {
         "title": "Sobre Mí",
-        "description": "Hola, soy Santiago Chamorro, un estudiante de Ingeniería de Software y desarrollador full-stack con pasión por el aprendizaje y la colaboración. Poseo habilidades actualizadas en el mundo del software. Cuando no estoy inmerso en la programación, destaco por mis hobbies, como andar en bicicleta, patinar, jugar al tenis de mesa, al voleibol y otros deportes."
+        "description": "Hola, soy Santiago Chamorro, un Ingeniero de Software Full Stack con pasión por el aprendizaje y la colaboración. Poseo habilidades actualizadas en el mundo del software. Cuando no estoy inmerso en la programación, destaco por mis hobbies, como andar en bicicleta, patinar, jugar al tenis de mesa, al voleibol y otros deportes."
     },
 
     "services": {
